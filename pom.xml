@@ -42,7 +42,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <upstreamVersion>1.1.0</upstreamVersion>
-        <sourceUrl>https://github.com/harvesthq/chosen/archive</sourceUrl>
+        <sourceUrl>https://github.com/harvesthq/chosen/releases/download/v${upstreamVersion}</sourceUrl>
         <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${upstreamVersion}</destDir>
     </properties>
     
@@ -58,13 +58,12 @@
                         <goals><goal>download-single</goal></goals>
                         <configuration>
                             <url>${sourceUrl}</url>
-                            <fromFile>v${upstreamVersion}.zip</fromFile>
+                            <fromFile>chosen_v${upstreamVersion}.zip</fromFile>
                             <toFile>${project.build.directory}/${project.artifactId}.zip</toFile>
                         </configuration>
                     </execution>
                 </executions>
             </plugin>
-
             <plugin>
                 <artifactId>maven-antrun-plugin</artifactId>
                 <version>1.7</version>
@@ -75,11 +74,7 @@
                         <configuration>
                             <target>
                                 <echo message="unzip archive" />
-                                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}" />
-                                <echo message="moving resources" />
-                                <move todir="${destDir}">
-                                    <fileset dir="${project.build.directory}/chosen-${upstreamVersion}" />
-                                </move>
+                                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${destDir}" />
                             </target>
                         </configuration>
                     </execution>
