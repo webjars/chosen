@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>chosen</artifactId>
-    <version>1.1.0-1-SNAPSHOT</version>
+    <version>1.1.0-1</version>
     <name>Chosen</name>
     <description>WebJar for Chosen</description>
     <url>http://webjars.org</url>
@@ -28,7 +28,7 @@
         <url>http://github.com/webjars/chosen</url>
         <connection>scm:git:https://github.com/webjars/chosen.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/chosen.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>chosen-1.1.0-1</tag>
     </scm>
 
     <developers>
