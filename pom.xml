@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>chosen</artifactId>
-    <version>1.3.0-SNAPSHOT</version>
+    <version>1.3.0</version>
     <name>Chosen</name>
     <description>WebJar for Chosen</description>
     <url>http://webjars.org</url>
@@ -28,7 +28,7 @@
         <url>http://github.com/webjars/chosen</url>
         <connection>scm:git:https://github.com/webjars/chosen.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/chosen.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>chosen-1.3.0</tag>
     </scm>
 
     <developers>
@@ -80,8 +80,8 @@
                         <goals><goal>run</goal></goals>
                         <configuration>
                             <target>
-                                <echo message="unzip archive"/>
-                                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${destDir}"/>
+                                <echo message="unzip archive" />
+                                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${destDir}" />
                             </target>
                         </configuration>
                     </execution>
