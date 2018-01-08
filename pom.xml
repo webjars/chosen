@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>chosen</artifactId>
-    <version>1.8.2</version>
+    <version>1.8.3-SNAPSHOT</version>
     <name>Chosen</name>
     <description>WebJar for Chosen</description>
     <url>http://webjars.org</url>
@@ -28,7 +28,7 @@
         <url>http://github.com/webjars/chosen</url>
         <connection>scm:git:https://github.com/webjars/chosen.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/chosen.git</developerConnection>
-        <tag>chosen-1.8.2</tag>
+        <tag>HEAD</tag>
     </scm>
 
     <developers>
